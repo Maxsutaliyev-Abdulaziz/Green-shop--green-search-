@@ -18,21 +18,21 @@ class Rooot extends Component {
         const onMaxNarx = ({ target: { value } }) => {
             this.setState.maxsum = value;
             console.log(value);
-            console.log(this.state.maxsum);
+            console.log(this.setState.maxsum);
         };
         const onMinNarx = ({ target: { value } }) => {
             this.setState.minsum = value;
             console.log(value);
-            console.log(this.state.minsum);
+            console.log(this.setState.minsum);
         };
 
         const onNarxFiltr = ({ target: { value } }) => {
             let res = data.filter(
-                (vl) => vl.narx <= this.state.maxsum
+                (vl) => vl.narx <= this.setState.maxsum
             ); res = data.filter(
-                (vl) => this.state.minsum <= vl.narx
+                (vl) => this.setState.minsum <= vl.narx
             );
-            console.log(this.sum);
+            console.log({list: res});
 
             this.setState({ list: res });
         };
