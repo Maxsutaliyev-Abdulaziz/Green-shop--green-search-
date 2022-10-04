@@ -16,12 +16,12 @@ class Rooot extends Component {
             this.setState({ list: res });
         };
         const onMaxNarx = ({ target: { value } }) => {
-            this.state.maxsum = value;
+            this.setState.maxsum = value;
             console.log(value);
             console.log(this.state.maxsum);
         };
         const onMinNarx = ({ target: { value } }) => {
-            this.state.minsum = value;
+            this.setState.minsum = value;
             console.log(value);
             console.log(this.state.minsum);
         };
